@@ -1,0 +1,42 @@
+[
+{
+    "id": 1,
+    "servicename":"HTML",
+    "imgg": "https://cdn4.iconfinder.com/data/icons/proglyphs-free/512/HTML5-64.png"
+},
+{
+    "id":2,
+    "servicename":"CSS",
+    "imgg":"https://cdn0.iconfinder.com/data/icons/logos-21/40/CSS3-64.png"
+},
+{
+    "id":3,
+    "servicename":"JAVASCRIPT",
+    "imgg":"https://cdn0.iconfinder.com/data/icons/logos-21/40/javascript-64.png"
+},
+{
+    "id":4,
+    "servicename":"REACT",
+    "imgg":"https://cdn3.iconfinder.com/data/icons/font-awesome-brands/512/react-64.png"
+},
+{
+    "id":5,
+    "servicename":"NODE",
+    "imgg":"https://cdn3.iconfinder.com/data/icons/font-awesome-brands/512/node-js-64.png"
+},
+{
+    "id":6,
+    "servicename":"EXPRESS",
+    "imgg":"https://cdn.icon-icons.com/icons2/2699/PNG/512/expressjs_logo_icon_169185.png"
+},
+{
+    "id":7,
+    "servicename":"PYTHON",
+    "imgg":"https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/python-64.png"
+},
+{
+    "id":8,
+    "servicename":"SQL",
+    "imgg":"https://cdn3.iconfinder.com/data/icons/pixel-perfect-at-24px-volume-7/24/5106-64.png"
+}
+]

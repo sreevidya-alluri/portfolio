@@ -1,0 +1,30 @@
+[
+    {
+        "id":1,
+        "coursename":"Full Stack Development",
+        "courseyear":"2023-24",
+        "institute":"NxtWave Academy",
+        "grade":"A Grade"
+    },
+    {
+        "id":2,
+        "coursename":"B.Tech in Computer Science and Engineering",
+        "courseyear":"2019-2023",
+        "institute":"Csi Wesley Institute of Technology and Sciences",
+        "grade":"7.12"
+    },
+    {
+        "id":3,
+        "coursename":"Intermediate",
+        "courseyear":"2017-2019",
+        "institute":"Narayana Junior College",
+        "grade":"8.95"
+    },
+    {
+        "id":4,
+        "coursename":"SSC",
+        "courseyear":"2017",
+        "institute":"St.Peter's Grammar School",
+        "grade":"9.5"
+    }
+]
