@@ -10,8 +10,7 @@ const About = () => {
             <div className="aboutcontent">
               <h2>About Me</h2><br/>
               <p>
-              I'm a dynamic Full Stack Developer. I learn, I build and ship websites. I am undergoing rigorous training at Nxtwave 4.0 Academy, which has significantly accelerated my learning curve. Proficient in HTML, CSS, Python, Bootstrap, SQL, JavaScript, Node.js, Express.js and  React.js, I've honed my skills through hands-on projects that showcase my creativity and expertise.
-              I have achieved certifications in various technologies including TCS NQT with a commendable 70% score, I'm committed to excellence and continuous learning. Beyond my current proficiency, I'm eager to explore emerging technologies like TypeScript, AngularJS, Material UI, and delve into frameworks like Ruby on Rails to further enhance my development journey.              </p>
+             I'm a Full Stack and DevOps Engineer with experience building scalable web applications using Golang, Node.js, and React.js. I’ve contributed to projects involving cloud migrations, CI/CD pipelines, and modern API development. Skilled in tools like Docker, Jenkins, AWS, and GCP, I bring a DevOps mindset to software engineering. I’m Google Cloud Certified and enjoy working in agile, fast-paced environments. Passionate about solving real-world problems with clean, efficient code.              </p>
             </div>
           </div>
         </div>

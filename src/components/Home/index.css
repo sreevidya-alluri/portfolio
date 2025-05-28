@@ -139,4 +139,125 @@
   margin-left: 100px;
   height: 250px;
   margin-top: 90px;
+} 
+
+
+
+@media (max-width: 767px) {
+  #home {
+    height: auto;
+    flex-direction: column;
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #home .container,
+  #home .row {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #home .col-sm-5,
+  #home .offset-sm-2,
+  #home .col-sm-4,
+  #home .col-sm-5.col-6,
+  #home .col-6 {
+    max-width: 100%;
+    flex: 0 0 100%;
+    text-align: center;
+  }
+
+  #home .imgsec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-bottom: 30px;
+  }
+
+  #home .imgsec img.imggirl {
+    height: 200px;
+    margin: 20px auto 0;
+  }
+
+  #home .imgsec .bgblack {
+    display: none;
+  }
+
+  #home .socialmedia {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  #home .socialmedia img {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+  }
+
+  #home .rightcontent {
+    padding: 20px;
+    text-align: center;
+  }
+
+  #home .rightcontent h1,
+  #home .rightcontent h2 {
+    text-align: center;
+  }
+
+  #home .rightcontent .btn {
+    margin: 10px 5px;
+    width: 120px;
+  }
+
+  .row {
+    margin: 0;
+  }
+}
+
+
+.socialmedia {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+
+  /* Fix for socialmedia position and display on mobile */
+@media (max-width: 576px) {
+  #home .responsive-below-hireme {
+    display: none !important;
+  }
+  #home .mobile-socialmedia {
+    display: flex !important;
+    justify-content: center;
+    gap: 16px;
+    position: static !important;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  #home .socialmedia {
+    position: static !important;
+    right: auto !important;
+    left: auto !important;
+    bottom: auto !important;
+    width: auto !important;
+    height: auto !important;
+    padding: 0 !important;
+    margin: 0 auto !important;
+    justify-content: center !important;
+  }
+  #home .rightcontent .btn {
+    margin: 10px 5px;
+    width: 120px;
+    display: inline-block;
+  }
 }

@@ -53,3 +53,32 @@
     transform: translateY(-100%);
   }
 }
+
+
+
+/* ===== Responsive Breakpoints ===== */
+
+/* Medium devices (tablets, 768px to 991px) */
+@media (max-width: 991px) {
+  #portfolio .col-lg-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  #portfolio .imgsec {
+    height: 250px;
+  }
+}
+
+/* Small devices (mobiles, less than 768px) */
+@media (max-width: 767px) {
+  #portfolio .col-lg-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  #portfolio .imgsec {
+    height: 200px;
+    border-top-width: 20px;
+  }
+}

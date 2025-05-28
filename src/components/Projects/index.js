@@ -22,54 +22,50 @@ const Projects = () => {
                   <br />
                 </div>
                 <div className="col-lg-4">
-                  <a href="https://jobbyhubapp.ccbp.tech/login" target="_blank" rel="noreferrer">
+                  <a href="https://sreevidyajobby.ccbp.tech/login" target="_blank" rel="noreferrer">
                     <div className="imgsec">
                       <LazyLoadImage src={jobbyapp} className="img-fluid" alt="Jobby App" />
                     </div>
                   </a>
                 </div>
                 <div className="col-lg-4">
-                  <a href="https://nxtwatchstream.ccbp.tech/login" target="_blank" rel="noreferrer">
+                  <a href="https://sreevidyawatch.ccbp.tech/login" target="_blank" rel="noreferrer">
                     <div className="imgsec">
                       <LazyLoadImage src={nxtwatchstream} className="img-fluid" alt="NxtWatch Stream" />
                     </div>
                   </a>
                 </div>
-                <div className="col-lg-4">
-                  <a href="https://moviedb.ccbp.tech/login" target="_blank" rel="noreferrer">
-                    <div className="imgsec">
-                      <LazyLoadImage src={movieDb} className="img-fluid" alt="Movie DB" />
-                    </div>
-                  </a>
-                </div>
-                <div className="col-lg-4">
-                  <a href="https://unirestrocafe.ccbp.tech/login" target="_blank" rel="noreferrer">
-                    <div className="imgsec">
-                      <LazyLoadImage src={unirestroapp} className="img-fluid" alt="Uni Restro App" />
-                    </div>
-                  </a>
-                </div>
-                <div className="col-lg-4">
-                  <a href="https://assessquick.ccbp.tech/login" target="_blank" rel="noreferrer">
-                    <div className="imgsec">
-                      <LazyLoadImage src={assessquick} className="img-fluid" alt="Assess Quick" />
-                    </div>
-                  </a>
-                </div>
-                <div className="col-lg-4">
-                  <a href="https://trendingnxt.ccbp.tech/login" target="_blank" rel="noreferrer">
-                    <div className="imgsec">
-                      <LazyLoadImage src={trendingnxt} className="img-fluid" alt="Trending Nxt" />
-                    </div>
-                  </a>
-                </div>
-                <div className="col-lg-4">
+               <div className="col-lg-4">
                   <a href="https://ipl-app-submit.vercel.app/" target="_blank" rel="noreferrer">
                     <div className="imgsec">
                       <LazyLoadImage src={ipl} className="img-fluid" alt="IPL App" />
                     </div>
                   </a>
                 </div>
+                   <div className="col-lg-4">
+                  <a href="https://sreevidyanxt.ccbp.tech/" target="_blank" rel="noreferrer">
+                    <div className="imgsec">
+                      <LazyLoadImage src={trendingnxt} className="img-fluid" alt="Trending Nxt" />
+                    </div>
+                  </a>
+                </div>
+            
+              {/*  <div className="col-lg-4">
+                  <a href="https://assessquick.ccbp.tech/login" target="_blank" rel="noreferrer">
+                    <div className="imgsec">
+                      <LazyLoadImage src={assessquick} className="img-fluid" alt="Assess Quick" />
+                    </div>
+                  </a>
+                </div> */}
+             
+                   <div className="col-lg-4">
+                  <a href="https://moviedb.ccbp.tech/login" target="_blank" rel="noreferrer">
+                    <div className="imgsec">
+                      <LazyLoadImage src={movieDb} className="img-fluid" alt="Movie DB" />
+                    </div>
+                  </a>
+                </div>
+               
               </div>
             </div>
           </div>

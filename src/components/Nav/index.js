@@ -8,92 +8,74 @@ import Jsprojects from "../../assets/img/jsprojects.png";
 import { Link } from "react-router-dom";
 import "./index.css";
 
+const navItems = [
+  { to: "/", icon: Home, alt: "home", label: "Home" },
+  { to: "/about", icon: About, alt: "about", label: "About" },
+  { to: "/projects", icon: Jsprojects, alt: "projects", label: "Projects" },
+  { to: "/education", icon: Education, alt: "education", label: "Education" },
+  { to: "/services", icon: Services, alt: "services", label: "Services" },
+  { to: "/contact", icon: Contact, alt: "contact", label: "Contact" },
+];
+
 const Nav = () => {
-  const [visible, setVisible] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
 
   return (
     <div>
+      {/* Desktop Navigation */}
       <div id="navigation">
         <ul>
-          <Link to="/">
-            <li data-aos="zoom-in">
-              <img src={Home} alt="home" />
-            </li>
-          </Link>
-          <Link to="/about">
-            <li data-aos="zoom-in">
-              <img src={About} alt="about" />
-            </li>
-          </Link>
-          <Link to="/projects">
-            <li data-aos="zoom-in">
-              <img src={Jsprojects} alt="jsprojects" />
-            </li>
-          </Link>
-          <Link to="/education">
-            <li data-aos="zoom-in">
-              <img src={Education} alt="education" />
-            </li>
-          </Link>
-          <Link to="/services">
-            <li data-aos="zoom-in">
-              <img src={Services} alt="services" />
-            </li>
-          </Link>
-          <Link to="/contact">
-            <li data-aos="zoom-in">
-              <img src={Contact} alt="contact" />
-            </li>
-          </Link>
+          {navItems.map((item, index) => (
+            <Link key={index} to={item.to}>
+              <li data-aos="zoom-in">
+                <img src={item.icon} alt={item.alt} />
+              </li>
+            </Link>
+          ))}
         </ul>
       </div>
 
+      {/* Mobile Navigation */}
       <div id="navigation-mob">
-        <h1 data-aos="fade-in">
-          <Link to="/">Sree Vidya</Link>
+        <h1>
+          <Link to="/">SV</Link>
         </h1>
-        <i
-          data-aos="fade-in"
-          className={visible ? "fa fa-close" : "fa fa-bars"}
-          onClick={() => setVisible(!visible)}
-        ></i>
-        <ul
-          className={`list-unstyled ${visible ? "visible" : ""}`}
-          data-aos="slide-down"
-          data-aos-duration="700"
+        
+        <button 
+          className="menu-toggle"
+          onClick={toggleMobileMenu}
+          aria-label="Toggle menu"
         >
-          <Link to="/">
-            <li onClick={() => setVisible(false)}>Home</li>
-          </Link>
-          <Link to="/about">
-            <li onClick={() => setVisible(false)}>About</li>
-          </Link>
-          <Link to="/services">
-            <li onClick={() => setVisible(false)}>What I Do</li>
-          </Link>
-          <Link to="/work">
-            <li onClick={() => setVisible(false)}>Work</li>
-          </Link>
-          <Link to="/education">
-            <li onClick={() => setVisible(false)}>Education</li>
-          </Link>
-          <Link to="/projects">
-            <li onClick={() => setVisible(false)}>Projects</li>
-          </Link>
-          <Link to="/portfolio">
-            <li onClick={() => setVisible(false)}>Portfolio</li>
-          </Link>
-          <a
-            href="https://drive.google.com/drive/folders/1TRlIYXPLPazrJb2lHQp5hmymqS4wj-Lx?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <li onClick={() => setVisible(false)}>Learn</li>
-          </a>
-          <Link to="/contact">
-            <li onClick={() => setVisible(false)}>Contact</li>
-          </Link>
+          <span className={`hamburger ${isMobileMenuOpen ? 'active' : ''}`}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+        
+        <ul className={isMobileMenuOpen ? 'visible' : ''}>
+          {navItems.map((item, index) => (
+            <li key={index}>
+              <Link to={item.to} onClick={closeMobileMenu}>
+                <img src={item.icon} alt={item.alt} />
+                <span className="nav-label">{item.label}</span>
+              </Link>
+            </li>
+          ))}
         </ul>
+        
+        <div 
+          className={`mobile-overlay ${isMobileMenuOpen ? 'visible' : ''}`}
+          onClick={closeMobileMenu}
+        ></div>
       </div>
     </div>
   );

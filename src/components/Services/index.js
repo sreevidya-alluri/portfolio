@@ -12,11 +12,11 @@ const Services = () => {
             <br/>
           </div>
           <div className="col-sm-11 offset-sm-1">
-            <div className="row">
+            <div className="row"> 
               {services.map((item, i) => (
                 <div className="col-sm-4" key={i} >
                   <div className="servicebox" data-aos="fade-zoom-in">
-                    <img src={item.imgg} alt="serviceimg" className="img-fluid" />
+                    <img src={item.imgg } alt="serviceimg" className="img-fluid" />
                     <h4>{item.servicename}</h4>
                   </div>
                 </div>
