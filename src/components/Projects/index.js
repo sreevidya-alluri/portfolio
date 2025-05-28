@@ -4,8 +4,6 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import jobbyapp from "../Data/Portfolioimg/jobbyappimg.png";
 import nxtwatchstream from "../Data/Portfolioimg/nxtwatchstream.png";
 import movieDb from "../Data/Portfolioimg/movieDb.png";
-import unirestroapp from "../Data/Portfolioimg/unirestroapp.png";
-import assessquick from "../Data/Portfolioimg/assessquick.png";
 import trendingnxt from "../Data/Portfolioimg/trendingnxt.png";
 import ipl from "../Data/Portfolioimg/ipl.png";
 

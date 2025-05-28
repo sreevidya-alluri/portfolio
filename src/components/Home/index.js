@@ -5,12 +5,6 @@ import Linkedinicon from '../../assets/img/socialicons/linkedin.png';
 import Githubicon from '../../assets/img/socialicons/github.png';
 import Mailicon from '../../assets/img/socialicons/email.png';
 
-import About from "../../assets/img/about.png";
-import Contact from "../../assets/img/contact.png";
-import Education from "../../assets/img/education.png";
-import Services from "../../assets/img/services.png";
-import Jsprojects from "../../assets/img/jsprojects.png";
-
 import { useState } from 'react';
 
 
